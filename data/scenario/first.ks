@@ -1,6 +1,6 @@
 ;一番最初に呼び出されるファイル
 
-[title name="ティラノスクリプト解説"]
+[title name="進捗を食べる犬"]
 
 [stop_keyconfig]
 
@@ -12,13 +12,20 @@
 ;ゲームで必ず必要な初期化処理はこのファイルに記述するのがオススメ
 
 ;メッセージボックスは非表示
-@layopt layer="message" visible=false
+@layopt layer="message" visible="false"
 
 ;最初は右下のメニューボタンを非表示にする
 [hidemenubutton]
 
-;タイトル画面へ移動
-@jump storage="title.ks"
+;変数宣言
+[call storage="main/variable.ks" ]
+;プラグイン読み込み
+[plugin name="html_read"]
+
+[jump storage="main/works.ks" ]
+
+; ;タイトル画面へ移動
+; @jump storage="title.ks"
 
 [s]
 
