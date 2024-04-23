@@ -40,14 +40,8 @@
 
 ; ;yamato
 ; [chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
-[html_set type="graph" storage="./data/others/graph.html" x="100" y="50" back_img="config/c_btn_back.png"]
-
+[html_set type="graph" storage="./data/others/graph.html" back_x="1100" back_y="20" back_img="config/c_btn_back.png" fadetime="300"]
 [cm ]
-; [html ]
-; <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-; <canvas id="myChart"></canvas>
-; [endhtml ]
-[jump target="*hoge" ]
 
 *hoge
 [iscript]
@@ -105,21 +99,18 @@ f.workingTime= [emb exp="f.workingTime" ][p]
 
 *description
 「作業開始/停止」を押すと作業時間が計測されます。[r]
-「作業時間破棄」を押すと作業時間がリセットされ計測停止されます。[p]
+「作業時間破棄」を押すと作業時間がリセットされ計測停止されます。[r]
 作業時間1時間で自動的に犬がおなかいっぱいになります。[r]
-最低でも一日一時間は作業をしてください。[p]
-作業時間10分ごとに1ポイント獲得します。[r]
+まずは1日1時間の作業を目標としてみましょう。[p]
+60分以降は作業時間10分ごとに1ポイント獲得します。[r]
 ポイントはショップで使えます。[p]
-さあ作業をしたまえ！[p]
+さあワンちゃんが物欲しげにこちらを見ていますよ！
 [jump target="*main" ]
 
 
 *graph
-; [bg storage="bg-graph.jpg" time="0" ]
-; [layopt layer="message0" visible="false"]
-; [ptext  name="workingTime" overwrite="true" layer="0" text="" x="100" y="100" size="100" color="white" bold="bold" edge="5px black"]
+
 [html_show type="graph"]
 [jump target="*main" ]
-
 
 [s]

@@ -10,6 +10,8 @@
 [iscript ]
   sf.workingTimeList=[];//累計作業時間
   sf.points=0;//獲得ポイント
+  
+
 [endscript ]
 
 
