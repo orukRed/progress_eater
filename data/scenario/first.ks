@@ -21,6 +21,10 @@
 [call storage="main/variable.ks" ]
 ;プラグイン読み込み
 [plugin name="html_read"]
+;マクロ読み込み
+[call storage="macro/timer.ks" ]
+;関数読み込み
+[loadjs storage="functions.js" ]
 
 [jump storage="main/works.ks" ]
 
