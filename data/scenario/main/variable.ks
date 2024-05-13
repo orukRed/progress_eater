@@ -7,7 +7,7 @@
 [endscript ]
 
 ;テスト用に、常に以下のシステム変数を宣言するためコメントしておく
-; [return cond="sf.initialized===true" ]
+[return cond="sf.initialized===true" ]
 
 ; //システム変数の宣言
 [iscript ]
